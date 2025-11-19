@@ -1,81 +1,165 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/reset.css" />
-    <link rel="stylesheet" href="css/custom.css" />
-    <link rel="stylesheet" href="css/fonts.css" />
-    <link rel="stylesheet" href="css/general.css" />
-    <link rel="stylesheet" href="css/layout.css" />
-    <link rel="stylesheet" href="css/burger.css" />
-    <link rel="stylesheet" href="css/cards.css" />
-    <link rel="stylesheet" href="css/form.css" />
-    <link rel="icon" type="image/png" href="img/fav.png" />
-    <title>Emergency Site</title>
-  </head>
-  <body id="register">
-    <header>
-      <nav>
-        <div id="logotype-wrapper" class="logo">
-          <a href="index.html"> LOGO-TYPE </a>
-        </div>
-        <ul class="menu">
-          <li><a class="menuItem" href="instruction.html">Nærkontakt </a></li>
-          <li><a class="menuItem" href="register.html">Indberet</a></li>
-        </ul>
-        <button class="burger">
-          <span class="line"></span>
-          <span class="line"></span>
-          <span class="line"></span>
-        </button>
-      </nav>
-    </header>
 
-    <main>
-      <h1>INDBERET</h1>
-      <section id="form-section">
-        <article id="form-info">
-          <h2>Overskrift</h2>
-          <p>Tekst</p>
-        </article>
-        <form id="webform"></form>
-      </section>
-      <section id="form-summary">
-        <h2>Summary</h2>
-        <article>
-          <p class="placeholder">Opsummering</p>
-        </article>
-      </section>
-    </main>
-    <footer>
-      <nav class="some">
-        <ul>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-        </ul>
-      </nav>
-      <nav class="another">
-        <ul>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-        </ul>
-      </nav>
-      <nav class="yetanother">
-        <ul>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-        </ul>
-      </nav>
-    </footer>
-    <script src="js/burger.js"></script>
-    <!-- <script src="js/main.js"></script> -->
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/custom.css" />
+  <link rel="stylesheet" href="css/fonts.css" />
+  <link rel="stylesheet" href="css/general.css" />
+  <link rel="stylesheet" href="css/layout.css" />
+  <link rel="stylesheet" href="css/burger.css" />
+  <link rel="stylesheet" href="css/cards.css" />
+  <link rel="stylesheet" href="css/forms.css" />
+  <link rel="icon" type="image/png" href="img/fav.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Asset&family=Momo+Trust+Display&family=Rubik:ital,wght@0,300..900;1,300..900&family=Savate:ital,wght@0,200..900;1,200..900&display=swap"
+    rel="stylesheet">
+  <title>Emergency Site</title>
+</head>
+
+<body id="register">
+  <header>
+    <nav>
+      <div id="logotype-wrapper" class="logo">
+        <a href="index.html"> LOGO-TYPE </a>
+      </div>
+      <ul class="menu">
+        <button id="switch">Darkmode</button>
+        <li><a class="menuItem" href="instruction.html">Nærkontakt </a></li>
+        <li><a class="menuItem" href="register.html">Indberet</a></li>
+      </ul>
+      <button class="burger">
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+    <h1>INDBERET</h1>
+    <section id="form-section">
+      <article id="form-info">
+        <h2>For meget TV</h2>
+        <p>Kan du relatere til manden, som ikke kan komme væk fra TV´et, så udfyld formularen nedenfor</p>
+      </article>
+      <form id="webform"></form>
+
+
+
+      <form id="webform-2">
+        <div class="form-flex-container">
+          <div class="form-group">
+            <label for="f-name">Fornavn</label>
+            <input id="f-name" name="f-name" type="text" required />
+          </div>
+          <div class="form-group">
+            <label for="l-name">Efternavn</label>
+            <input id="l-name" name="l-name" type="text" />
+          </div>
+        </div>
+        <button id="submit_btn" type="submit">Send</button>
+      </form>
+
+
+
+      <form id="webform-8">
+        <fieldset id="boomer-range">
+          <legend>Hvor meget TV ser du</legend>
+          <label for="boomer"> Hvor afhæning af TV er du på en skala fra 0 - 100? </label>
+          <input type="range" name="boomer" id="boomer" min="0" max="100" value="0" />
+        </fieldset>
+      </form>
+
+      <form id="webform-7">
+        <fieldset id="behavior">
+          <legend>Symptomer</legend>
+          <p>Sæt kryds ved de symptomer, som du har haft:</p>
+          <div class="form-group">
+            <div>
+              <input type="checkbox" id="behavior1" name="behavior" value="ukoordineret-gang" />
+              <label for="behavior1">Firkantede øjne</label>
+            </div>
+            <div>
+              <input type="checkbox" id="behavior2" name="behavior" value="lyde-grynt" />
+              <label for="behavior3">Kan ikke slippe fjernbetjeningen</label>
+            </div>
+            <div>
+              <input type="checkbox" id="behavior3" name="behavior" value="gik-efter-mennesker" />
+              <label for="behavior5">Har ikke læst avisen i en uge</label>
+            </div>
+            <div>
+              <input type="checkbox" id="behavior4" name="behavior" value="stirrede-tomt" />
+              <label for="behavior6">Kan ikke tænke på andet end næste episode</label>
+            </div>
+          </div>
+        </fieldset>
+      </form>
+
+      <form id="webform-4">
+
+        <div class="form-group">
+          <label for="e-mail">Email</label>
+          <p>Please enter valid e-mail</p>
+          <input id="e-mail" name="e-mail" type="email" required />
+        </div>
+
+        <button id="submit_btn" type="submit">Send</button>
+      </form>
+
+    </section>
+
+    <section id="Form-summary">
+      <h2>Summary</h2>
+      <article>
+        <p>fulde navn<span="name_output"></span></p>
+        <p>Email<span="email_output"></span></p>
+
+        <p>Udstyr<span="udstyr_output"></span></p>
+        <p>Tekst<span="tekst_output"></span></p>
+        <p>Billede<span="billede_output"></span></p>
+      </article>
+    </section>
+
+
+
+  </main>
+  <footer>
+    <nav class="some">
+      <ul>
+        <li><a href="">link</a></li>
+        <li><a href="">link</a></li>
+        <li><a href="">link</a></li>
+        <li><a href="">link</a></li>
+      </ul>
+    </nav>
+    <nav class="another">
+      <ul>
+        <li><a href="">link</a></li>
+        <li><a href="">link</a></li>
+        <li><a href="">link</a></li>
+        <li><a href="">link</a></li>
+      </ul>
+    </nav>
+    <nav class="yetanother">
+      <ul>
+        <li><a href="">link</a></li>
+        <li><a href="">link</a></li>
+        <li><a href="">link</a></li>
+        <li><a href="">link</a></li>
+      </ul>
+    </nav>
+  </footer>
+  <script src="js/burger.js"></script>
+  <script src="js/darkmode.js"></script>
+  <script src="js/forms.js"></script>
+  </script>
+  <!-- <script src="js/main.js"></script> -->
+</body>
+
 </html>

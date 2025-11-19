@@ -55,8 +55,11 @@
   content: "BREAKING NEWS";
   background-color: var(--color-headline-bg);
   color: var(--color-headline-text-page);
-  font-size: var(--font-h3-size);
-  font-weight: var(--font-weight-medium);
+  font-family: "Momo Trust Display", sans-serif;
+  font-weight: 350;
+  font-style: normal;
+
+  font-size: 29px;
   text-align: center;
   line-height: 1rem;
   padding: calc(1.1rem / 1.5) 0 calc(1.1rem / 2) 0;
@@ -90,4 +93,50 @@
 .cta_btn:after {
   content: "\2192";
   margin-left: 1rem;
+}
+
+/* Dialog styling ved cards */
+dialog {
+  background-color: rgb(220, 144, 62);
+  color: rgb(91, 35, 17);
+  padding: 1rem;
+  max-height: 100vh;
+  max-width: 70ch;
+  width: 90vh;
+}
+
+.img_dialog1 {
+  width: 100%;
+  height: auto;
+}
+
+#news_popover1 {
+  background-color: rgb(220, 144, 62);
+  color: rgb(91, 35, 17);
+  padding: 1rem;
+  max-height: 100vh;
+  max-width: 70ch;
+  width: 90vh;
+}
+
+[popover] {
+  transition: ease-in 700ms;
+}
+
+:popover-open {
+  opacity: 1;
+  rotate: none;
+
+  @starting-style {
+    opacity: 0;
+  }
+}
+
+#news_popover2 {
+  background-color: rgb(220, 144, 62);
+  color: rgb(91, 35, 17);
+  padding: 1rem;
+  max-height: 100vh;
+  max-width: 70ch;
+  width: 90vh;
 }

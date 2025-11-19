@@ -1,119 +1,240 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/reset.css" />
-    <link rel="stylesheet" href="css/custom.css" />
-    <link rel="stylesheet" href="css/fonts.css" />
-    <link rel="stylesheet" href="css/general.css" />
-    <link rel="stylesheet" href="css/layout.css" />
-    <link rel="stylesheet" href="css/burger.css" />
-    <link rel="stylesheet" href="css/cards.css" />
-    <link rel="icon" type="image/png" href="img/fav.png" />
-    <title>Emergency Site</title>
-  </head>
-  <body id="frontpage">
-    <header>
-      <nav>
-        <div id="logotype-wrapper" class="logo">
-          <a href="index.html"> LOGO-TYPE </a>
-        </div>
-        <ul class="menu">
-          <li><a class="menuItem" href="instruction.html">Nærkontakt </a></li>
-          <li><a class="menuItem" href="register.html">Indberet</a></li>
-        </ul>
-        <button class="burger">
-          <span class="line"></span>
-          <span class="line"></span>
-          <span class="line"></span>
-        </button>
-      </nav>
-    </header>
-    <section id="main-disclamer">
-      <div id="main-disclamer-content">
-        <img src="warning" alt="ICON" />
-        <div>
-          <h1>OVERSKRIFT</h1>
-          <p class="sub">Underrubrik</p>
-        </div>
-      </div>
-    </section>
-    <main>
-      <section id="daily">
-        <article class="daily_card">
-          <img src="" alt="teaser_img" />
-          <div class="daily_text">
-            <h2>Teaser</h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
-              magnam ducimus ea, sed minima asperiores.
-            </p>
-            <a href="" class="cta_btn">Se mere</a>
-          </div>
-        </article>
-        <article class="daily_card">
-          <img src="" alt="teaser_img" />
-          <div class="daily_text">
-            <h2>Teaser</h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
-              magnam ducimus ea, sed minima asperiores.
-            </p>
-            <a href="" class="cta_btn">Se mere</a>
-          </div>
-        </article>
-      </section>
-      <section id="breaking">
-        <article class="news_card">
-          <h3>Nyhed</h3>
-          <p>Lorem ipsum dolor sit, sed minima asperiores.</p>
-          <img src="" alt="news_img" />
-          <a class="cta_btn" href="">Læs mere</a>
-        </article>
-        <article class="news_card">
-          <h3>Nyhed</h3>
-          <p>Lorem ipsum dolor sit, sed minima asperiores.</p>
-          <img src="" alt="news_img" />
-          <a class="cta_btn" href="">Læs mere</a>
-        </article>
-        <article class="news_card">
-          <h3>Nyhed</h3>
-          <p>Lorem ipsum dolor sit, sed minima asperiores.</p>
-          <img src="" alt="news_img" />
-          <a class="cta_btn" href="">Læs mere</a>
-        </article>
-      </section>
-    </main>
 
-    <footer>
-      <nav class="some">
-        <ul>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-        </ul>
-      </nav>
-      <nav class="another">
-        <ul>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-        </ul>
-      </nav>
-      <nav class="yetanother">
-        <ul>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-        </ul>
-      </nav>
-    </footer>
-    <script src="js/burger.js"></script>
-    <!-- <script src="js/main.js"></script> -->
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/custom.css" />
+  <link rel="stylesheet" href="css/fonts.css" />
+  <link rel="stylesheet" href="css/general.css" />
+  <link rel="stylesheet" href="css/layout.css" />
+  <link rel="stylesheet" href="css/burger.css" />
+  <link rel="stylesheet" href="css/cards.css" />
+  <link rel="stylesheet" href="css/infographic.css">
+  <link rel="icon" type="image/png" href="img/fav.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Asset&family=Momo+Trust+Display&family=Rubik:ital,wght@0,300..900;1,300..900&family=Savate:ital,wght@0,200..900;1,200..900&display=swap"
+    rel="stylesheet">
+  <title>Emergency Site</title>
+</head>
+
+<body id="frontpage">
+  <header>
+    <nav>
+      <div id="logotype-wrapper" class="logo">
+        <img src=img alt="logo" class="logo">
+      </div>
+      <ul class="menu">
+        <button id="switch">Darkmode</button>
+
+
+        <li><a class="menuItem" href="instruction.html">Nærkontakt </a></li>
+        <li><a class="menuItem" href="register.html">Indberet</a></li>
+      </ul>
+      <button class="burger">
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+      </button>
+    </nav>
+  </header>
+  <section id="main-disclamer">
+    <div id="main-disclamer-content">
+      <img src="warning" alt="ICON" />
+      <div>
+        <h1>Escape the TV</h1>
+        <p class="sub">Emergency! Har du også fået firkantede øjne?</p>
+
+      </div>
+    </div>
+  </section>
+  <main>
+    <section id="daily">
+      <article class="daily_card">
+        <img src="img/Skærmbillede 2025-11-12 113012.png" alt="teaser_img" />
+        <div class="daily_text">
+          <h2>Manden, der så for meget TV</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
+            magnam ducimus ea, sed minima asperiores.
+          </p>
+          <a href="" class="cta_btn">Se mere</a>
+        </div>
+      </article>
+      <article class="daily_card">
+        <img src="img/artikel3img.png" alt="teaser_img" />
+        <div class="daily_text">
+          <h2>Ser du for meget TV?</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
+            magnam ducimus ea, sed minima asperiores.
+          </p>
+          <a href="" class="cta_btn">Se mere</a>
+        </div>
+      </article>
+    </section>
+
+
+    <section id="breaking">
+      <article class="news_card">
+        <h3>Manden der glemte at blinke</h3>
+        <p>Han skulle bare se nyhederne – men endte med at se alt. En stille tirsdag blev starten på et TV-maraton uden
+          ende.</p>
+        <img src="img/artikel1img.png" alt="news_img" />
+
+        <dialog id="dialog_1">
+          <form method="dialog_1">
+            <h2>Manden der glemte at blinke</h2>
+            <h3>Han skulle bare se nyhederne – men endte med at se alt. En stille tirsdag blev starten på et TV-maraton
+              uden
+              ende.</h3>
+            <img class="img_dialog1" src="img/artikel2img.png" alt="news-img">
+            <h3>En ganske almindelig tirsdag, hvor fjernsynet tog over
+              Det begyndte, som det ofte gør. Ét enkelt program efter aftensmaden. “Jeg skal bare lige se nyhederne,”
+              sagde han. Men
+              da credits rullede, startede det næste program – og så endnu ét. Timerne forsvandt, lyset ændrede sig, og
+              kaffekoppen
+              blev kold. Avisen lå urørt på bordet, mens skærmen blinkede videre med uendelige løfter om underholdning
+              og
+              virkelighedsflugt.
+              “Jeg så bare lidt for meget TV. Nu ser jeg ikke så meget andet,” siger han tørt, mens refleksen fra
+              skærmen danser i
+              øjnene.
+              Da billedrøret blev et vindue – og verden udenfor blev mindre
+              I 1950’erne sagde man, at børn risikerede at få firkantede øjne. Dengang grinede man af det. I dag er det
+              voksne, der
+              stirrer sig ud af døgnrytme og selskab. Fjernsynet er ikke længere et møbel – det er blevet en livsstil.
+              De fleste bemærker det først, når verden udenfor føles lidt sløret, og tiden indenfor går lidt for
+              hurtigt.
+              Fakta: Kendetegn på skærmtræthed
+              – Du ser “bare ét afsnit mere” – flere gange i træk – Avisen bliver aldrig åbnet – Du husker reklamerne
+              bedre end
+              dagens begivenheder
+              Træk stikket ud – bare for en stund
+              Det handler ikke om at blive asketisk eller nostalgisk. Det handler om at huske, at der findes liv udenfor
+              lysglimtene.
+              Sluk for skærmen en enkelt aften. Læs noget, gå en tur, eller se ud ad vinduet i stedet for ind i
+              billedrøret.
+              “Pas på – skærmen ser også på dig.”</h3>
+            <button id="close_btn">LUK</button>
+          </form>
+        </dialog>
+        <button class="cta_btn" id="cta_open1">Læs mere</button>
+      </article>
+
+      <article class="news_card">
+        <h3>Når fjernsynet blev familiens nye medlem</h3>
+        <p>Fra samlingspunkt til skillevæg. Engang samlede fjernsynet familien – nu holder det os adskilt, hver i vores
+          egen kanal.</p>
+        <img src="img/artikel2img.png" alt="news_img" />
+
+        <button popovertarget="news_popover1" class="cta_btn">Læs mere</button>
+
+        <div popover id="news_popover1">
+          <h2>Når fjernsynet blev familiens nye medlem</h2>
+          <h3>Fra samlingspunkt til skillevæg. Engang samlede fjernsynet familien – nu holder det os adskilt, hver i
+            vores
+            egen kanal.</h3>
+          <img class="img_dialog1" src=" img/artikel2img.png" alt="new_img">
+          <h3>Dengang vi sad tæt i sofaen og så det samme
+            Der var en tid, hvor fjernsynet var en begivenhed. Hele familien samledes foran den flimrende skærm. Kaffen
+            duftede,
+            børnene gættede med, og man kunne høre nabolejligheden grine på samme tidspunkt.
+            “TV’et var som et bål midt i stuen,” fortæller en ældre seer. “Man var sammen – selv når man var stille.”
+
+            Fra fællesskab til ensom underholdning – skærmen flytter ud i alle rum
+            I dag er fjernsynet ikke længere fælles. Det er flyttet ind i soveværelset, køkkenet, lommen og hånden. Vi
+            ser hver
+            vores, på hver vores tid, i hver vores verden. Fjernsynet har fået børn, og de bor overalt.
+            De første reklamer fra 50’erne lovede: “Samler familien – hver aften klokken otte!” Ironisk nok blev det
+            begyndelsen på
+            adskillelsen.
+
+            Når fjernsynet ikke længere forener – men forstummer samtalen
+            Der bliver stadig tændt i stuerne, men snakken forstummer. Vi ser uden at dele, lytter uden at høre.Måske er
+            det på
+            tide at genfinde det fælles blik – ikke mod skærmen, men mod hinanden.
+            “Saml familien – ikke fjernbetjeningerne.”</h3>
+          <button popovertarget="news_popover1">Luk</button>
+        </div>
+
+      </article>
+
+      <article class="news_card">
+        <h3>Firkantede øjne og flade tanker</h3>
+        <p>De advarede os allerede i 50’erne. For meget fjernsyn ville give firkantede øjne. De havde måske mere ret,
+          end de selv
+          vidste.</p>
+        <img src="img/artikel3img.png" alt="news_img" />
+        <button popovertarget="news_popover2" class="cta_btn">Læs mere</button>
+
+        <div popover id="news_popover2">
+          <h2>Firkantede øjne og flade tanker</h2>
+          <h3>De advarede os allerede i 50’erne. For meget fjernsyn ville give firkantede øjne. De havde måske mere ret,
+            end de selv
+            vidste.</h3>
+          <img class="img_dialog1" src="img/artikel3img.png" alt="">
+          <h3>Da advarslen lød som en spøg – og blev til virkelighed
+            I klasselokaler og aviser advarede man: “Se nu ikke for meget fjernsyn!” Forældrene smilede, børnene lo, og
+            ingen tog
+            det alvorligt. Men i dag, hvor skærmene har fået hjul, vinger og internetforbindelse, føles advarslen
+            pludselig
+            profetisk.
+            Vi har ikke bare fået firkantede øjne – men også firkantede vaner.
+
+            Når tankerne bliver flade, og verden reduceres til billeder
+            Fjernsynet kræver intet. Det beder kun om vores tid og vores blik. Programmerne flyder, og vi flyder med.
+            Tankerne
+            standser, mens underholdningen fortsætter.
+            “Det er som at spise chips med øjnene,” siger en medieekspert. “Man bliver aldrig mæt – bare mere træt.”
+
+            Tænk rundt igen – og tænd din egen fantasi
+            Luk skærmen ned. Åbn noget andet. Læs en bog, lav noget med hænderne, tal med nogen, der ikke har pixels i
+            ansigtet.
+            Verden sender stadig live – du skal bare dreje hovedet væk fra billedrøret.
+            “Sluk boksen – tænd tankerne.”</h3>
+          <button popovertarget="news_popover2">Luk</button>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    <nav class="some">
+      <ul>
+        <li><a href="">link</a></li>
+        <li><a href="">link</a></li>
+        <li><a href="">link</a></li>
+        <li><a href="">link</a></li>
+      </ul>
+    </nav>
+    <nav class="another">
+      <ul>
+        <li><a href="">link</a></li>
+        <li><a href="">link</a></li>
+        <li><a href="">link</a></li>
+        <li><a href="">link</a></li>
+      </ul>
+    </nav>
+    <nav class="yetanother">
+      <ul>
+        <li><a href="">link</a></li>
+        <li><a href="">link</a></li>
+        <li><a href="">link</a></li>
+        <li><a href="">link</a></li>
+      </ul>
+    </nav>
+  </footer>
+  <script src="js/burger.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/dialog.js"></script>
+  <script src="js/darkmode.js"></script>
+
+
+</body>
+
 </html>

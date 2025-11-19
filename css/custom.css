@@ -1,34 +1,35 @@
 :root {
+  color-scheme: light;
   /* Colours */
-  --color-bg: #cfceca; /* page background /*
+  --color-bg: light-dark(#eaddae, #5c3519); /* page background /*
 
   /* Header */
-  --color-head-bg: #625e5c;
+  --color-head-bg: light-dark(#e4c441, #175184);
 
   /* Logotype */
-  --color-logotype-bg: #2a2828;
-  --color-text-logotype: #c1bfb8;
+  --color-logotype-bg: light-dark(#c0ddef, #8daa4e);
+  --color-text-logotype: light-dark(#5e340a, #e3c240);
   --font-logotype-size: 1rem;
 
   /* Global menu */
-  --color-menu-bg: #5a5b5e;
+  --color-menu-bg: light-dark(#dfa1a1, #cd6413);
   /* Links */
-  --color-link-bg: #78766e;
-  --color-link-hover: #fff; /* used */
+  --color-link-bg: #e4b954;
+  --color-link-hover: #e4b954; /* used */
   --color-link-active: #99958f; /* used */
   --border-radius-links: 1px;
 
   /* Headlines og rubrik */
-  --font-h1-size: 1rem;
-  --font-sub1-size: 1rem;
-  --font-h2-size: 1rem;
+  --font-h1-size: 32px;
+  --font-sub1-size: 23px;
+  --font-h2-size: 1.5rem;
   --font-h3-size: 1rem;
-  --color-headline-bg: #4b4545;
-  --color-headline-text-page: #42413d;
+  --color-headline-bg: light-dark(#5880bb, #ad461a);
+  --color-headline-text-page: light-dark(#dfa1a1, #759c5c);
 
   /* Tekst */
-  --color-text: #000;
-  --color-text-inverted: #cdccc4;
+  --color-text: light-dark(#5e340a, #e3c240);
+  --color-text-inverted: light-dark(#5e340a, #e3c240);
 
   /*  Marginer */
   --margin-head-bottom: 5px;
@@ -37,33 +38,52 @@
   --border-radius: 5px;
 
   /* Cards */
-  --color-card-bg: #8a8585;
-  --color-cta-card-bg: #d5d2d0;
+  --color-card-bg: light-dark(#ffffff, #175184);
+  --color-cta-card-bg: light-dark(#dfc655, #cd6413);
   /* news-cards */
-  --color-news-bg: #dbdad4;
-  --color-news-bg-inverted: #585a5e;
-  --color-cta-newscard-bg: #787473;
-  --color-cta-newscard-bg-inverted: #7b7d83;
+  --color-news-bg: light-dark(#ffffff, #175184);
+  --color-news-bg-inverted: light-dark(#cee1ee, #975224);
+  --color-cta-newscard-bg: #bb672f;
+  --color-cta-newscard-bg-inverted: #426eac;
 
   /* Fonts */
-  --font-family-sans: ui-sans-serif;
-  /* --font-weight-light: 300;
-  --font-weight-regular: 400;
-  --font-weight-medium: 500;
-  --font-weight-bold: 700; */
 
   /* Text sizes */
   --logotype-size: 1rem;
-  --headline1-size: 2rem;
-  --headline2-size: 1rem;
-  --headline3-size: 1rem;
+  --headline1-size: 1.5rem;
+  --headline2-size: 1.4rem;
+  --headline3-size: 1.1rem;
   --bodytext-size: 1rem;
   --cta-text-size: 1rem;
   --followup-text-size: 1rem;
   --form-submit-size: 1rem;
 
   /* Infographics */
-  --color-info-bg: #676161;
-  --color-infobox-1-bg: #cfcec6;
-  --color-infobox-2-bg: #969995;
+  --color-info-bg: #9aaf73;
+  --color-infobox-1-bg: #a8bec2;
+  --color-infobox-2-bg: #ffffff;
+}
+html.dark {
+  color-scheme: dark;
+}
+
+h1 {
+  font-family: "Asset", serif;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: -2px;
+}
+
+h2,
+h3 {
+  font-family: "Momo Trust Display", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: -0.7px;
+}
+
+p {
+  font-family: "Rubik", sans-serif;
+  font-weight: 460;
+  font-style: normal;
 }
