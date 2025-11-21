@@ -26,10 +26,13 @@
   <header>
     <nav>
       <div id="logotype-wrapper" class="logo">
-        <a href="index.html"> LOGO-TYPE </a>
+        <a href="index.html"> <img src="img/Tvtema4sketch6.svg" alt="logo" class="logo"> </a>
       </div>
       <ul class="menu">
-        <button id="switch">Darkmode</button>
+        <label class="switch">
+          <input type="checkbox" id="switch">
+          <span class="slider"></span>
+        </label>
         <li><a class="menuItem" href="instruction.html">Nærkontakt </a></li>
         <li><a class="menuItem" href="register.html">Indberet</a></li>
       </ul>
@@ -45,84 +48,78 @@
     <h1>INDBERET</h1>
     <section id="form-section">
       <article id="form-info">
-        <h2>For meget TV</h2>
-        <p>Kan du relatere til manden, som ikke kan komme væk fra TV´et, så udfyld formularen nedenfor</p>
+        <h2>Ser du for meget TV?</h2>
+        <p>Kan du relatere til manden, som ikke kan komme væk fra TV'et?
+          Så udfyld formularen nedenfor, og kom i TV-rehab.</p>
       </article>
-      <form id="webform"></form>
 
+      <!-- SAMLET FORM -->
+      <form id="webform">
 
-
-      <form id="webform-2">
         <div class="form-flex-container">
           <div class="form-group">
             <label for="f-name">Fornavn</label>
-            <input id="f-name" name="f-name" type="text" required />
+            <input id="f-name" name="f_name" type="text" required />
           </div>
+
           <div class="form-group">
             <label for="l-name">Efternavn</label>
-            <input id="l-name" name="l-name" type="text" />
+            <input id="l-name" name="l_name" type="text" />
           </div>
         </div>
-        <button id="submit_btn" type="submit">Send</button>
-      </form>
 
-
-
-      <form id="webform-8">
         <fieldset id="boomer-range">
-          <legend>Hvor meget TV ser du</legend>
-          <label for="boomer"> Hvor afhæning af TV er du på en skala fra 0 - 100? </label>
+          <legend>Hvor meget TV ser du?</legend>
+          <label for="boomer">Hvor afhængig af TV er du på en skala fra 0–100?</label>
           <input type="range" name="boomer" id="boomer" min="0" max="100" value="0" />
         </fieldset>
-      </form>
 
-      <form id="webform-7">
         <fieldset id="behavior">
           <legend>Symptomer</legend>
           <p>Sæt kryds ved de symptomer, som du har haft:</p>
+
           <div class="form-group">
             <div>
-              <input type="checkbox" id="behavior1" name="behavior" value="ukoordineret-gang" />
+              <input type="checkbox" id="behavior1" name="behavoir" value="Firkantede øjne" />
               <label for="behavior1">Firkantede øjne</label>
             </div>
+
             <div>
-              <input type="checkbox" id="behavior2" name="behavior" value="lyde-grynt" />
-              <label for="behavior3">Kan ikke slippe fjernbetjeningen</label>
+              <input type="checkbox" id="behavior2" name="behavoir" value="Kan ikke slippe fjernbetjeningen" />
+              <label for="behavior2">Kan ikke slippe fjernbetjeningen</label>
             </div>
+
             <div>
-              <input type="checkbox" id="behavior3" name="behavior" value="gik-efter-mennesker" />
-              <label for="behavior5">Har ikke læst avisen i en uge</label>
+              <input type="checkbox" id="behavior3" name="behavoir" value="Har ikke læst avisen i en uge" />
+              <label for="behavior3">Har ikke læst avisen i en uge</label>
             </div>
+
             <div>
-              <input type="checkbox" id="behavior4" name="behavior" value="stirrede-tomt" />
-              <label for="behavior6">Kan ikke tænke på andet end næste episode</label>
+              <input type="checkbox" id="behavior4" name="behavoir" value="Tænker kun på næste episode" />
+              <label for="behavior4">Tænker kun på næste episode</label>
             </div>
           </div>
         </fieldset>
-      </form>
-
-      <form id="webform-4">
 
         <div class="form-group">
           <label for="e-mail">Email</label>
-          <p>Please enter valid e-mail</p>
-          <input id="e-mail" name="e-mail" type="email" required />
+          <p>Indtast en gyldig email</p>
+          <input id="e-mail" name="email" type="email" required />
         </div>
 
         <button id="submit_btn" type="submit">Send</button>
-      </form>
 
+      </form>
     </section>
 
     <section id="Form-summary">
       <h2>Summary</h2>
       <article>
-        <p>fulde navn<span="name_output"></span></p>
-        <p>Email<span="email_output"></span></p>
-
-        <p>Udstyr<span="udstyr_output"></span></p>
-        <p>Tekst<span="tekst_output"></span></p>
-        <p>Billede<span="billede_output"></span></p>
+        <p>Fornavn: <span class="f_name_output"></span></p>
+        <p>Efternavn: <span class="l_name_output"></span></p>
+        <p>TV-afhængighed: <span class="boomer_output"></span></p>
+        <p>Symptomer: <span class="behavoir_output"></span></p>
+        <p>Email: <span class="e-mail_output"></span></p>
       </article>
     </section>
 

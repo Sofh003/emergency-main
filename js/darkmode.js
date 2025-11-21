@@ -5,10 +5,10 @@ function toggleTheme() {
   console.log("toggleTheme");
   html.classList.toggle("dark");
 
-  if (html.classList.comtains("dark")) {
-    localStorage.setItem("darkmode", true);
+  if (html.classList.contains("dark")) {
+    sessionStorage.setItem("darkmode", "true");
   } else {
-    localStorage.setItem("darkmode", false);
+    sessionStorage.setItem("darkmode", "false");
   }
 }
 

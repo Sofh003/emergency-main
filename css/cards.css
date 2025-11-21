@@ -75,12 +75,13 @@
   justify-self: center;
 }
 .cta_btn {
-  display: inline-block;
-  padding: 0.4rem 1rem;
+  display: flex;
+  padding: 0.3rem 0.7rem;
   background-color: var(--color-cta-card-bg);
   color: var(--color-text-inverted);
   text-decoration: none;
-  width: max-content;
+  max-width: 170px;
+  max-height: 43px;
   border-radius: var(--border-radius);
 }
 .news_card .cta_btn {

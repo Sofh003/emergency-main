@@ -26,10 +26,13 @@
   <header>
     <nav>
       <div id="logotype-wrapper" class="logo">
-        <img src=img alt="logo" class="logo">
+        <img src="img/Tvtema4sketch6.svg" alt="logo" class="logo">
       </div>
       <ul class="menu">
-        <button id="switch">Darkmode</button>
+        <label class="switch">
+          <input type="checkbox" id="switch">
+          <span class="slider"></span>
+        </label>
 
 
         <li><a class="menuItem" href="instruction.html">Nærkontakt </a></li>
@@ -44,7 +47,7 @@
   </header>
   <section id="main-disclamer">
     <div id="main-disclamer-content">
-      <img src="warning" alt="ICON" />
+      <img src="img/Tvtema4sketch.svg" alt="ICON" />
       <div>
         <h1>Escape the TV</h1>
         <p class="sub">Emergency! Har du også fået firkantede øjne?</p>
@@ -55,14 +58,17 @@
   <main>
     <section id="daily">
       <article class="daily_card">
-        <img src="img/Skærmbillede 2025-11-12 113012.png" alt="teaser_img" />
+        <img src="img/FigurForside.png" alt="teaser_img" />
         <div class="daily_text">
           <h2>Manden, der så for meget TV</h2>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
-            magnam ducimus ea, sed minima asperiores.
+            Denne hjemmeside dykker ned i den moderne nødsituation: når underholdningen overtager hverdagen, og
+            virkeligheden bliver
+            en pause mellem reklameblokke.
           </p>
-          <a href="" class="cta_btn">Se mere</a>
+          <a href="instruction.html" class="cta_btn">
+            <p>Se mere</p>
+          </a>
         </div>
       </article>
       <article class="daily_card">
@@ -70,10 +76,12 @@
         <div class="daily_text">
           <h2>Ser du for meget TV?</h2>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
-            magnam ducimus ea, sed minima asperiores.
+            Sidder du med samme problem, som manden. Føler du dig fanget bag TV skærmen, og kan langsomt mærke, at dine
+            øjne bliver mere firkantede, og at andre daglige gøremål bliver udsat. Få hjælp fra eksperter.
           </p>
-          <a href="" class="cta_btn">Se mere</a>
+          <a href="register.html" class="cta_btn">
+            <p>Se mere</p>
+          </a>
         </div>
       </article>
     </section>
@@ -93,7 +101,8 @@
               uden
               ende.</h3>
             <img class="img_dialog1" src="img/artikel2img.png" alt="news-img">
-            <h3>En ganske almindelig tirsdag, hvor fjernsynet tog over
+            <h3>En ganske almindelig tirsdag, hvor fjernsynet tog over...</h3>
+            <p>
               Det begyndte, som det ofte gør. Ét enkelt program efter aftensmaden. “Jeg skal bare lige se nyhederne,”
               sagde han. Men
               da credits rullede, startede det næste program – og så endnu ét. Timerne forsvandt, lyset ændrede sig, og
@@ -104,10 +113,14 @@
               “Jeg så bare lidt for meget TV. Nu ser jeg ikke så meget andet,” siger han tørt, mens refleksen fra
               skærmen danser i
               øjnene.
-              Da billedrøret blev et vindue – og verden udenfor blev mindre
+            </p>
+            <h3>Da billedrøret blev et vindue – og verden udenfor blev mindre</h3>
+            <p>
               I 1950’erne sagde man, at børn risikerede at få firkantede øjne. Dengang grinede man af det. I dag er det
               voksne, der
-              stirrer sig ud af døgnrytme og selskab. Fjernsynet er ikke længere et møbel – det er blevet en livsstil.
+              stirrer sig ud af døgnrytme og selskab. </p>
+            <h3> Fjernsynet er ikke længere et møbel – det er blevet en livsstil.</h3>
+            <p>
               De fleste bemærker det først, når verden udenfor føles lidt sløret, og tiden indenfor går lidt for
               hurtigt.
               Fakta: Kendetegn på skærmtræthed
@@ -119,11 +132,13 @@
               lysglimtene.
               Sluk for skærmen en enkelt aften. Læs noget, gå en tur, eller se ud ad vinduet i stedet for ind i
               billedrøret.
-              “Pas på – skærmen ser også på dig.”</h3>
+              “Pas på – skærmen ser også på dig.”</p>
             <button id="close_btn">LUK</button>
           </form>
         </dialog>
-        <button class="cta_btn" id="cta_open1">Læs mere</button>
+        <button class="cta_btn" id="cta_open1">
+          <p>Læs mere</p>
+        </button>
       </article>
 
       <article class="news_card">
@@ -132,7 +147,9 @@
           egen kanal.</p>
         <img src="img/artikel2img.png" alt="news_img" />
 
-        <button popovertarget="news_popover1" class="cta_btn">Læs mere</button>
+        <button popovertarget="news_popover1" class="cta_btn">
+          <p>Læs mere</p>
+        </button>
 
         <div popover id="news_popover1">
           <h2>Når fjernsynet blev familiens nye medlem</h2>
@@ -170,7 +187,9 @@
           end de selv
           vidste.</p>
         <img src="img/artikel3img.png" alt="news_img" />
-        <button popovertarget="news_popover2" class="cta_btn">Læs mere</button>
+        <button popovertarget="news_popover2" class="cta_btn">
+          <p>Læs mere</p>
+        </button>
 
         <div popover id="news_popover2">
           <h2>Firkantede øjne og flade tanker</h2>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 695.67 443.58">
+  <path d="M441.23,171.88s-9.53-2.47-8.47,11.51l-.08,80.58c0,.49.03,3.56,2.46,5.89,3.04,2.54,5.63,2.11,6.09,2.06,44.2.15,88.4.3,132.6.45.42.04,3.13.32,5.09-1.76,1.21-1.28,2.02-3.47,1.53-7.18l.15-79.48s1.44-12.12-8.62-12.23l-130.75.17Z" style="fill: #f2ffe8; stroke: #683007; stroke-miterlimit: 10; stroke-width: 2px;"/>
+  <path d="M528.97,167.91s-18.79-17.82-41.02,0h41.02Z" style="fill: #f2ffe8; stroke: #683007; stroke-miterlimit: 10; stroke-width: 2px;"/>
+  <g>
+    <line x1="487.94" y1="124.05" x2="503.29" y2="162.15" style="fill: #4f1f04;"/>
+    <polygon points="502.58 162.46 487.22 124.36 488.66 123.74 504.01 161.84 502.58 162.46" style="fill: #4f1f04;"/>
+  </g>
+  <g>
+    <line x1="519.17" y1="135.84" x2="509.38" y2="162.15" style="fill: #4f1f04;"/>
+    <polygon points="510.11 162.44 508.66 161.86 518.45 135.55 519.9 136.13 510.11 162.44" style="fill: #4f1f04;"/>
+  </g>
+  <path d="M447.45,178.05s-9.98-.12-9.53,13.16l-.26,62.49s-.54,11.63,9.79,11.51h88.27c.5,0,1,.1,1.5.11,6.3.07,9.46.28,8.95-13.54l.44-60.85s.16-13.98-14.2-12.96l-84.96.08Z" style="fill: #f4d264;"/>
+  <path d="M450.92,182.28s-9.16-.11-8.74,11.59l-.24,55.04s-.49,10.24,8.98,10.14h81.02c.46,0,.92.09,1.38.09,5.78.06,8.69.25,8.21-11.92l.41-53.59s.15-12.31-13.04-11.42l-77.98.07Z" style="fill: #6587c4; stroke: #683007; stroke-miterlimit: 10; stroke-width: 2px;"/>
+  <path d="M553.32,178.05h19.85s2.18,0,1.85,4.39l.32,78.39s.15,4.11-2.18,3.84h-19.85s-2.51.07-2.38-4.66l-.13-77.84s-.14-4.11,2.51-4.11Z" style="fill: #f4d264;"/>
+  <path d="M554.87,181.94h17.09s1.87,0,1.6,3.92l.28,70.08s.13,3.68-1.87,3.43h-17.09s-2.16.07-2.05-4.17l-.11-69.59s-.12-3.68,2.16-3.68Z" style="fill: #dda2b9;"/>
+  <ellipse cx="563.27" cy="196.42" rx="7.72" ry="8" style="fill: #6da5e2; stroke: #683007; stroke-miterlimit: 10;"/>
+  <ellipse cx="563.04" cy="219.45" rx="7.49" ry="7.76" style="fill: #6da5e2; stroke: #683007; stroke-miterlimit: 10;"/>
+  <ellipse cx="563.04" cy="219.45" rx="4.96" ry="5.13" style="fill: #b3d0ff; stroke: #683007; stroke-miterlimit: 10;"/>
+  <ellipse cx="563.04" cy="196.42" rx="4.96" ry="5.13" style="fill: #b3d0ff; stroke: #683007; stroke-miterlimit: 10;"/>
+  <text transform="translate(443.97 248.32)" style="fill: #fff; font-family: Shuttleblock-Bold, Shuttleblock; font-size: 73px; font-weight: 700;"><tspan x="0" y="0" style="letter-spacing: .01em;">T</tspan><tspan x="45.19" y="0">V</tspan></text>
+  <text transform="translate(93.7 235.96)" style="fill: #9dba56; font-family: FranklinGothic-HeavyItalic, &apos;Franklin Gothic Heavy&apos;; font-size: 58px; font-style: italic; font-weight: 800;"><tspan x="0" y="0">ES</tspan><tspan x="69.02" y="0" style="letter-spacing: -.02em;">C</tspan><tspan x="104.84" y="0">APE THE</tspan></text>
+</svg>

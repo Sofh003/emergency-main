@@ -31,78 +31,98 @@
   padding: 0;
 }
 
-#webform-2 .form-flex-container {
+/* Styling af forms */
+#webform {
+  background: var(--forms-background-color);
+  padding: 30px;
+  max-width: 600px;
+  margin: 0 auto 40px auto;
+  border-radius: 15px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+#form-section h2 {
+  margin-top: 0;
+}
+
+.form-flex-container {
   display: flex;
-  gap: 2rem;
-}
-#webform-2 label,
-#webform-2 input,
-#webform-2 button {
-  display: block;
-  margin: 0.3rem 0;
-  color: #a03e25;
-  font-size: 1rem;
-  font-weight: bold;
-}
-#webform-2 {
-  background-color: #f9eac6;
-  padding: 1rem;
-  border: 1px solid rgb(88, 119, 159);
-  border-radius: 10px;
+  gap: 20px;
 }
 
-#webform-4 {
-  accent-color: red;
-  background-color: #f9eac6;
-  padding: 1rem;
-  border: 1px solid rgb(88, 119, 159);
-  border-radius: 10px;
-}
-
-#webform-4 p {
-  font-size: 0.7rem;
-  margin: 0.2rem;
-}
-#webform-4 label {
-  margin: 1rem 0 0.4rem 0;
-  color: #863825;
-  font-size: 1.2rem;
-  font-weight: bold;
-}
-
-#webform-8 {
-  accent-color: #c55a3f;
-}
-
-#webform-8 #boomer-range {
-  background-color: #f9eac6;
+.form-group {
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
-  padding: 2rem;
-  border-radius: 15px;
-}
-#webform-8 legend {
-  color: #a03e25;
-  font-size: 1.2rem;
-  font-weight: bold;
+  margin-bottom: 20px;
 }
 
-#webform-7 {
-  background-color: none;
-  padding: none;
-  color: #9e442d;
-  accent-color: #863825;
+label {
+  font-weight: 600;
+  margin-bottom: 5px;
 }
-#webform-7 fieldset {
-  background-color: #f9eac6;
+
+input[type="text"],
+input[type="email"],
+input[type="range"] {
+  padding: 10px;
+  border: 1px solid #482807;
+  border-radius: 8px;
+  outline: none;
+  transition: border-color 0.2s ease;
+}
+
+input:focus {
+  border-color: #ddd833;
+}
+
+fieldset {
   border: none;
-  border-radius: 15px;
-  padding: 1rem;
-  margin: none;
+  padding: 20px;
+  margin-bottom: 20px;
+  background: var(--formsfieldset-background-color);
+  border-radius: 12px;
+  box-shadow: inset 0px 0px 4px rgba(0, 0, 0, 0.05);
 }
-#webform-7 legend {
-  color: #a03e25;
-  font-size: 1.2rem;
+
+legend {
   font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.form-group div {
+  margin-bottom: 10px;
+}
+
+button[type="submit"] {
+  padding: 12px 20px;
+  border: none;
+  background: #683d1b;
+  color: rgb(247, 200, 98);
+  font-size: 16px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+button[type="submit"]:hover {
+  background: #6e4721;
+}
+
+#Form-summary {
+  background: var(--formssummary-background-color);
+  padding: 25px;
+  margin: 20px auto;
+  max-width: 600px;
+  border-radius: 15px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+#Form-summary p {
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+#Form-summary span {
+  font-weight: bold;
+  margin-left: 5px;
 }

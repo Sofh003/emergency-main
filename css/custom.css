@@ -1,49 +1,49 @@
 :root {
   color-scheme: light;
   /* Colours */
-  --color-bg: light-dark(#eaddae, #5c3519); /* page background /*
+  --color-bg: light-dark(#f1ead0, #4b301c); /* page background /*
 
   /* Header */
-  --color-head-bg: light-dark(#e4c441, #175184);
+  --color-head-bg: light-dark(#b3ccdb, #3b5d8f);
 
   /* Logotype */
-  --color-logotype-bg: light-dark(#c0ddef, #8daa4e);
+  --color-logotype-bg: light-dark(#e8c86b, #cd6413);
   --color-text-logotype: light-dark(#5e340a, #e3c240);
   --font-logotype-size: 1rem;
 
   /* Global menu */
-  --color-menu-bg: light-dark(#dfa1a1, #cd6413);
+  --color-menu-bg: light-dark(#be9169, #84a6b8);
   /* Links */
-  --color-link-bg: #e4b954;
+  --color-link-bg: light-dark(#b3ccdb, #c17d76);
   --color-link-hover: #e4b954; /* used */
   --color-link-active: #99958f; /* used */
-  --border-radius-links: 1px;
+  --border-radius-links: 20px;
 
   /* Headlines og rubrik */
   --font-h1-size: 32px;
   --font-sub1-size: 23px;
-  --font-h2-size: 1.5rem;
+  --font-h2-size: 1.2rem;
   --font-h3-size: 1rem;
-  --color-headline-bg: light-dark(#5880bb, #ad461a);
-  --color-headline-text-page: light-dark(#dfa1a1, #759c5c);
+  --color-headline-bg: light-dark(#6487ba, #ad461a);
+  --color-headline-text-page: light-dark(#dfa1a1, #a3b25c);
 
   /* Tekst */
   --color-text: light-dark(#5e340a, #e3c240);
-  --color-text-inverted: light-dark(#5e340a, #e3c240);
+  --color-text-inverted: light-dark(#54290f, #e3c240);
 
   /*  Marginer */
   --margin-head-bottom: 5px;
 
   /* Borders */
-  --border-radius: 5px;
+  --border-radius: 20px;
 
   /* Cards */
-  --color-card-bg: light-dark(#ffffff, #175184);
-  --color-cta-card-bg: light-dark(#dfc655, #cd6413);
+  --color-card-bg: light-dark(#ffffff, #3b5d8f);
+  --color-cta-card-bg: light-dark(#8cb5c3, #99632a);
   /* news-cards */
-  --color-news-bg: light-dark(#ffffff, #175184);
+  --color-news-bg: light-dark(#ffffff, #3b5d8f);
   --color-news-bg-inverted: light-dark(#cee1ee, #975224);
-  --color-cta-newscard-bg: #bb672f;
+  --color-cta-newscard-bg: light-dark(#be9169, #be7972);
   --color-cta-newscard-bg-inverted: #426eac;
 
   /* Fonts */
@@ -59,9 +59,13 @@
   --form-submit-size: 1rem;
 
   /* Infographics */
-  --color-info-bg: #9aaf73;
-  --color-infobox-1-bg: #a8bec2;
-  --color-infobox-2-bg: #ffffff;
+  --color-info-bg: light-dark(#b5be76, #405d90);
+  --color-infobox-1-bg: light-dark(#a8bec2, #77451d);
+  --color-infobox-2-bg: light-dark(#ffffff, #9d5925);
+
+  --forms-background-color: light-dark(#b4c9d7, #9d5925);
+  --formsfieldset-background-color: light-dark(#f6fafd, #7a4924);
+  --formssummary-background-color: light-dark(#b4c9d7, #9d5925);
 }
 html.dark {
   color-scheme: dark;
@@ -86,4 +90,58 @@ p {
   font-family: "Rubik", sans-serif;
   font-weight: 460;
   font-style: normal;
+}
+
+.underteskt_instruktion {
+  max-width: 550px;
+  font-family: "Momo Trust Display", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: -0.7px;
+}
+
+/* darkmode switch */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 54px;
+  height: 29px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #754f3c;
+  transition: 0.3s;
+  border-radius: 34px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 23px;
+  width: 23px;
+  left: 3px;
+  bottom: 3px;
+  background-color: white;
+  transition: 0.3s;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: #e4be4b;
+}
+
+input:checked + .slider:before {
+  transform: translateX(25px);
 }

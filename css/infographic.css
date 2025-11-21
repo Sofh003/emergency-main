@@ -18,10 +18,10 @@
   margin-bottom: 1rem;
 }
 .info-text h3 {
-  font-size: 0.8rem;
+  font-size: 1.3rem;
   line-height: 0.8rem;
   font-weight: 600;
-  margin: 0;
+  margin-top: 5px;
   padding: 0;
 }
 .info-text > *:not(:first-child) {

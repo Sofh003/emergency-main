@@ -21,7 +21,7 @@ header {
 
 #main-disclamer-content {
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 2fr 4fr;
 }
 
 main section {
@@ -33,7 +33,7 @@ h1 {
   font-size: var(--font-h1-size);
   font-weight: var(--font-weight-bold);
   color: var(--color-text-inverted);
-  margin: 5px 0;
+  margin-top: 60px;
 
   text-align: none;
 }
@@ -96,7 +96,7 @@ nav a {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  height: 3.8rem;
+  height: 4.5rem;
 }
 
 #logotype-wrapper > a {
@@ -108,9 +108,9 @@ nav a {
 }
 
 .logo {
-  height: 12rem;
-  padding-bottom: 0.3rem;
-  padding-right: 3rem;
+  height: 10rem;
+  padding-top: 0.2rem;
+  padding-right: 6rem;
 }
 /* Global menu */
 header nav li a {
@@ -128,13 +128,6 @@ header > nav li > a:after {
 }
 
 /* Global menu hover effekt - Lav den om til det, du synes */
-nav a:hover {
-  background-color: var(--color-link-hover);
-}
-
-nav a:active {
-  background-color: var(--color-link-active);
-}
 
 /* FOOTER */
 footer a {
